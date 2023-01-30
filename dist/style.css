@@ -62,14 +62,19 @@ table {
     flex-direction: column;
     justify-content: space-between;
     font-family: 'myFont';
+
+    background-image: url('sushipic.jpg');
+    background-size: cover;
+    /* height: 100%;
+    width: 100%; */
 }
 
-.heroImage {
+/* .heroImage {
     background-image: url('sushipic.jpg');
     background-size: cover;
     height: 100%;
     width: 100%;
-}
+} */
 
 .header {
     min-height: 15%;
