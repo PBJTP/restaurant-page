@@ -1,6 +1,7 @@
 import buildWebsite from "./fullsite";
 import showHome from "./home";
 import showMenu from "./menu";
+import showAbout from "./about";
 
 buildWebsite();
 showHome();
@@ -13,6 +14,10 @@ function eventListeners() {
     const menu = document.querySelector('.menu');
     menu.addEventListener('click', () => {
         showMenu();
+    });
+    const about = document.querySelector('.about');
+    about.addEventListener('click', () => {
+        showAbout();
     });
 }
 
