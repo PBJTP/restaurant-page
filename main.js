@@ -10,6 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/about.js":
+/*!**********************!*\
+  !*** ./src/about.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction aboutPage() {\n    const modal = document.createElement('div');\n    const torch = document.createElement('p');\n    const toss = document.createElement('p');\n    const roll = document.createElement('p');\n    const torchimg = document.createElement('img');\n    const tossimg = document.createElement('img');\n    const rollimg = document.createElement('img');\n\n    modal.classList.add('aboutModal');\n    torchimg.src = \"img/torch.jpeg\";\n    tossimg.src = \"img/toss.jpeg\";\n    rollimg.src = \"img/roll.jpeg\";\n\n    modal.appendChild(torch);\n    modal.appendChild(torchimg);\n    modal.appendChild(tossimg);\n    modal.appendChild(toss);\n    modal.appendChild(roll);\n    modal.appendChild(rollimg);\n\n    return modal;\n};\n\nfunction showAbout() {\n    const hero = document.querySelector('.hero');\n    while (hero.firstChild) {\n        hero.removeChild(hero.firstChild);\n    }\n\n    hero.appendChild(aboutPage());\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (showAbout);\n\n//# sourceURL=webpack://restaurant-page/./src/about.js?");
+
+/***/ }),
+
 /***/ "./src/fullsite.js":
 /*!*************************!*\
   !*** ./src/fullsite.js ***!
@@ -36,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _fullsite__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fullsite */ \"./src/fullsite.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n\n\n\n\n(0,_fullsite__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n(0,_home__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\nfunction eventListeners() {\n    const home = document.querySelector('.home');\n    home.addEventListener('click', () => {\n        (0,_home__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n    });\n    const menu = document.querySelector('.menu');\n    menu.addEventListener('click', () => {\n        (0,_menu__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n    });\n}\n\n\neventListeners();\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _fullsite__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fullsite */ \"./src/fullsite.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n/* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./about */ \"./src/about.js\");\n\n\n\n\n\n(0,_fullsite__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n(0,_home__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\nfunction eventListeners() {\n    const home = document.querySelector('.home');\n    home.addEventListener('click', () => {\n        (0,_home__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n    });\n    const menu = document.querySelector('.menu');\n    menu.addEventListener('click', () => {\n        (0,_menu__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n    });\n    const about = document.querySelector('.about');\n    about.addEventListener('click', () => {\n        (0,_about__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n    });\n}\n\n\neventListeners();\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
 
 /***/ }),
 

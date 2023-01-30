@@ -170,6 +170,29 @@ table {
     font-size: 35px;
 }
 
+.hero .aboutModal {
+    background-color: rgb(0, 0, 0, 0.4);
+    min-height: 600px;
+    padding: 25px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr;
+    font-size: 32px;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutModal p {
+    width: 400px;
+    text-align: center;
+}
+
+.aboutModal img {
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+}
+
 .footer {
     background-color: rgb(0, 0, 0);
     color: rgb(112, 112, 112);
