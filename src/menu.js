@@ -38,6 +38,15 @@ function makeMenuItem(name, description) {
 
 function showMenu() {
     const hero = document.querySelector('.hero');
+
+    const navHome = document.querySelector('.home');
+    const navMenu = document.querySelector('.menu');
+    const navAbout = document.querySelector('.about');
+
+    navHome.classList.remove('active');
+    navMenu.classList.add('active');
+    navAbout.classList.remove('active');
+
     while (hero.firstChild) {
         hero.removeChild(hero.firstChild);
     }

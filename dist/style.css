@@ -55,6 +55,7 @@ table {
     font-family: "myFont";
     src: url("Oswald-Bold.ttf");
 }
+
 #content {
     height: 100vh;
     width: auto;
@@ -65,16 +66,7 @@ table {
 
     background-image: url('./img/sushipic.jpg');
     background-size: cover;
-    /* height: 100%;
-    width: 100%; */
 }
-
-/* .heroImage {
-    background-image: url('sushipic.jpg');
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-} */
 
 .header {
     min-height: 15%;
@@ -110,10 +102,6 @@ table {
     text-align: center;
 }
 
-/* .header .home {
-    border: solid white 2px;
-} */
-
 .header li:hover {
     color:rgb(119, 119, 119);
 }
@@ -145,6 +133,7 @@ table {
     display: grid;
     gap: 15px;
     grid-template-columns: 1fr 1fr;
+    display: border-box;
 }
 
 .menuModal h2 {
@@ -158,6 +147,10 @@ table {
     height: 150px;
     width: 190px;
     border-radius: 7px;
+}
+
+.menuItem img:hover {
+    box-shadow: white 0px 0px 10px;
 }
 
 .menuItem p {

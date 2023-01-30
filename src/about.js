@@ -27,6 +27,15 @@ function aboutPage() {
 
 function showAbout() {
     const hero = document.querySelector('.hero');
+
+    const navHome = document.querySelector('.home');
+    const navMenu = document.querySelector('.menu');
+    const navAbout = document.querySelector('.about');
+
+    navHome.classList.remove('active');
+    navMenu.classList.remove('active');
+    navAbout.classList.add('active');
+
     while (hero.firstChild) {
         hero.removeChild(hero.firstChild);
     }
