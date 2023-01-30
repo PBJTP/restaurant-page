@@ -9,8 +9,11 @@ function aboutPage() {
 
     modal.classList.add('aboutModal');
     torchimg.src = "img/torch.jpeg";
-    tossimg.src = "img/toss.jpeg";
-    rollimg.src = "img/roll.jpeg";
+    tossimg.src = "img/tossing.jpeg";
+    rollimg.src = "img/rolling.jpeg";
+    torch.textContent = "We make really good sushi and sometimes torch it!";
+    toss.textContent = "We also toss it around to make sure it is fit for consumption!";
+    roll.textContent = "But at the end of the day, all our sushi is handmade deliciously for you!";
 
     modal.appendChild(torch);
     modal.appendChild(torchimg);
