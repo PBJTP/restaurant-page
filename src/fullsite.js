@@ -8,7 +8,8 @@
 
 // add event listeners to nav buttons with functionality to change content
 
-import homePage from "./home";
+import showHome from "./home";
+import showMenu from "./menu";
 
 function header() {
     const header = document.createElement('div');
@@ -48,6 +49,14 @@ function nav() {
     return nav;
 }
 
+function hero() {
+    const hero = document.createElement('div');
+
+    hero.classList.add('hero');
+
+    return hero;
+}
+
 function footer() {
     const footer = document.createElement('div');
     const sign = document.createElement('h3');
@@ -65,8 +74,10 @@ function buildWebsite() {
     const content = document.getElementById('content');
 
     content.appendChild(header());
-    content.appendChild(homePage());
+    content.appendChild(hero());
     content.appendChild(footer());
 }
+
+
 
 export default buildWebsite;
